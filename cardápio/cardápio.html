@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="cardápio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <title>Lanchão - Cardápio</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/homepage/index.html">
+        <img src="/img/burger-logo.png" alt="Lanchão Logo">
+      </a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <!-- Menu de navegação que será exibido abaixo do logo -->
+    <div class="links">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/card%C3%A1pio/card%C3%A1pio.html">Menu</a></li>
+          <li><a href="http://127.0.0.1:5500/promo%C3%A7%C3%B5es/promocoes.html">Promoções</a></li>
+          <li><a href="http://127.0.0.1:5500/localiza%C3%A7%C3%A3o/localizacao.html">Localização</a></li>
+          <li><a href="http://127.0.0.1:5500/sobre_n%C3%B3s/sobre_n%C3%B3s.html">Sobre Nós</a></li>
+          <li><a href="http://127.0.0.1:5500/contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de Combos -->
+  <section class="combos">
+    <h2>Combos Especiais</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="/img/combo1.png" alt="Hambúrguer Especial da Casa" />
+        <h3>Combo Clássico</h3>
+        <p>1 Hambúrguer Clássico + 1 Refrigerante + 1 Sobremesa.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/combo2.jpg" alt="Hambúrguer Especial da Casa" />
+        <h3>Combo Família</h3>
+        <p>2 Hambúrgueres + 2 Refrigerantes + 2 Sobremesas.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/combo2.jpg" alt="Hambúrguer Especial da Casa" />
+        <h3>Combo Família</h3>
+        <p>2 Hambúrgueres + 2 Refrigerantes + 2 Sobremesas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Destaques -->
+  <section class="highlights">
+    <h2>Destaques do Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="/img/hamburguer-1.jpg" alt="Hambúrguer Especial da Casa" />
+        <h3>Hambúrguer Especial da Casa</h3>
+        <p>
+          Carne bovina, queijo, cebola caramelizada, cogumelos e molho secreto
+          da casa.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-5.avif" alt="Hambúrguer de Bacon" />
+        <h3>Hambúrguer de Bacon</h3>
+        <p>
+          Carne grelhada, queijo cheddar, fatias crocantes de bacon e molho
+          barbecue.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/sorvete.png" alt="Sorvete" />
+        <h3>Sorvete</h3>
+        <p>Vários sabores de sorvete cremoso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <h2>Nosso Cardápio</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="/img/hamburguer-4.avif" alt="Hambúrguer Clássico" />
+        <h3>Hambúrguer Clássico</h3>
+        <p>
+          Pão macio, carne suculenta, queijo derretido e molhos especiais.
+          Simples e delicioso!
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-5.avif" alt="Hambúrguer de Bacon" />
+        <h3>Hambúrguer de Bacon</h3>
+        <p>
+          Carne grelhada, queijo cheddar, fatias crocantes de bacon e molho
+          barbecue.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-3.jpg" alt="Hambúrguer Vegano" />
+        <h3>Hambúrguer Vegano</h3>
+        <p>
+          Pão integral, hambúrguer de grão-de-bico, alface, tomate e maionese
+          vegana.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-2.jpg" alt="Hambúrguer de Frango" />
+        <h3>Hambúrguer de Frango</h3>
+        <p>
+          Filé de frango grelhado, alface, tomate, queijo e maionese
+          temperada.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-1.jpg" alt="Hambúrguer Especial da Casa" />
+        <h3>Hambúrguer Especial da Casa</h3>
+        <p>
+          Carne bovina, queijo, cebola caramelizada, cogumelos e molho secreto
+          da casa.
+        </p>
+      </div>
+
+      <!-- Nova fileira -->
+      <div class="menu-item">
+        <img src="/img/hamburguer-2.jpg" alt="Cheeseburger Duplo" />
+        <h3>Cheeseburger Duplo</h3>
+        <p>
+          Dois hambúrgueres suculentos, queijo cheddar derretido, alface e
+          tomate.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-4.avif" alt="Hambúrguer de Peixe" />
+        <h3>Hambúrguer de Peixe</h3>
+        <p>Filé de peixe empanado, alface, tomate e molho tártaro.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-5.avif" alt="Hambúrguer Picante" />
+        <h3>Hambúrguer Picante</h3>
+        <p>Carne apimentada, jalapeños, queijo derretido e molho chipotle.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-3.jpg" alt="Hambúrguer Vegano" />
+        <h3>Hambúrguer Vegano</h3>
+        <p>
+          Pão integral, hambúrguer de grão-de-bico, alface, tomate e maionese
+          vegana.
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/hamburguer-1.jpg" alt="Hambúrguer Especial da Casa" />
+        <h3>Hambúrguer Especial da Casa</h3>
+        <p>
+          Carne bovina, queijo, cebola caramelizada, cogumelos e molho secreto
+          da casa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Bebidas -->
+  <section class="beverages">
+    <h2>Bebidas</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="/img/coca.avif" alt="Refrigerante" />
+        <h3>Refrigerante</h3>
+        <p>Coca-Cola, Guaraná, Fanta e mais.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/suco.png" alt="Suco Natural" />
+        <h3>Suco Natural</h3>
+        <p>Laranja, limão, abacaxi e mais.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/agua.png" alt="Água Mineral" />
+        <h3>Água Mineral</h3>
+        <p>Com ou sem gás.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Sobremesas -->
+  <section class="desserts">
+    <h2>Sobremesas</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="/img/sorvete.png" alt="Sorvete" />
+        <h3>Sorvete</h3>
+        <p>Vários sabores de sorvete cremoso.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/brownie.png" alt="Brownie" />
+        <h3>Brownie de Chocolate</h3>
+        <p>Brownie com calda de chocolate e sorvete.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="/img/milkshake.png" alt="Milkshake" />
+        <h3>Milkshake</h3>
+        <p>Sabor morango, chocolate, baunilha e mais.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" class="cta-button"
+      target="_blank" rel="noopener noreferrer">
+      Faça seu Pedido
+    </a>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2024 Lanchão. Todos os direitos reservados.</p>
+    <p>Nos siga nas redes sociais:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://whatsapp.com">WhatsApp</a>
+    </p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

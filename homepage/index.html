@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <title>Lanchão</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/homepage/index.html">
+        <img src="/img/burger-logo.png" alt="Lanchão Logo">
+      </a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <!-- Menu de navegação que será exibido abaixo do logo -->
+    <div class="links">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/card%C3%A1pio/card%C3%A1pio.html">Menu</a></li>
+          <li><a href="http://127.0.0.1:5500/promo%C3%A7%C3%B5es/promocoes.html">Promoções</a></li>
+          <li><a href="http://127.0.0.1:5500/localiza%C3%A7%C3%A3o/localizacao.html">Localização</a></li>
+          <li><a href="http://127.0.0.1:5500/sobre_n%C3%B3s/sobre_n%C3%B3s.html">Sobre Nós</a></li>
+          <li><a href="http://127.0.0.1:5500/contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção com o nome da empresa -->
+  <section class="company-name">
+    <h1>BURGER - O Melhor Hambúrguer da Cidade</h1>
+  </section>
+
+
+  <!-- Carrossel com legendas -->
+  <section class="carousel">
+    <div class="carousel-item active">
+      <img src="/img/hamburguer-1.jpg" alt="Hambúrguer 1">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/hamburguer-4.avif" alt="Hambúrguer 2">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/hamburguer-5.avif" alt="Hambúrguer 3">
+    </div>
+    <span class="carousel-nav left" onclick="prevSlide()">&#10094;</span>
+    <span class="carousel-nav right" onclick="nextSlide()">&#10095;</span>
+  </section>
+
+  <section class="cta">
+    <a href="http://127.0.0.1:5500/card%C3%A1pio/card%C3%A1pio.html" class="cta-button">Faça seu Pedido</a>
+  </section>
+  <footer>
+    <p>&copy; 2024 Lanchão. Todos os direitos reservados.</p>
+    <p>Nos siga nas redes sociais:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://whatsapp.com">WhatsApp</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

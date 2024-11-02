@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contato.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <title>Lanchão</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/homepage/index.html">
+        <img src="/img/burger-logo.png" alt="Lanchão Logo">
+      </a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <!-- Menu de navegação que será exibido abaixo do logo -->
+    <div class="links">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/card%C3%A1pio/card%C3%A1pio.html">Menu</a></li>
+          <li><a href="http://127.0.0.1:5500/promo%C3%A7%C3%B5es/promocoes.html">Promoções</a></li>
+          <li><a href="http://127.0.0.1:5500/localiza%C3%A7%C3%A3o/localizacao.html">Localização</a></li>
+          <li><a href="http://127.0.0.1:5500/sobre_n%C3%B3s/sobre_n%C3%B3s.html">Sobre Nós</a></li>
+          <li><a href="http://127.0.0.1:5500/contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Quer saber mais ou fazer um pedido especial? Fale conosco preenchendo o formulário ou pelos contatos abaixo!</p>
+
+    <form id="contatoForm">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      </div>
+      <button type="button" id="enviarWhatsApp">Enviar para WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="informacoes">
+    <h3>Informações de Contato</h3>
+    <p>Telefone: (11) 1234-5678<br>Email: contato@lanchao.com</p>
+  </section>
+
+  <section class="horario">
+    <h3>Horário de Funcionamento</h3>
+    <p>Segunda a Sábado: 11h - 22h<br>Domingo: 12h - 20h</p>
+  </section>
+
+  <section class="faq">
+    <h3>Perguntas Frequentes</h3>
+    <div class="faq-item">
+      <h4>Vocês fazem entregas?</h4>
+      <p>Sim, aceitamos pedidos para entrega ou retirada no local!</p>
+    </div>
+    <div class="faq-item">
+      <h4>Quais métodos de pagamento aceitam?</h4>
+      <p>Aceitamos cartões de crédito, débito e dinheiro.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Lanchão. Todos os direitos reservados.</p>
+    <p>Nos siga:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://whatsapp.com">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("enviarWhatsApp").addEventListener("click", function () {
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      const telefoneWhatsApp = "551112345678"; // Insira o número de telefone no formato internacional
+      const textoWhatsApp = `Olá! Meu nome é ${nome}\n meu e-mail é ${email}.\n Minha mensagem: ${mensagem}`;
+
+      const urlWhatsApp = `https://wa.me/${telefoneWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
+      window.open(urlWhatsApp, "_blank");
+    });
+
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

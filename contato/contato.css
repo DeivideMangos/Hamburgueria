@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('/img/backround.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo img {
+  width: 135px;
+  height: 110px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  /* Ajustado para um valor válido */
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #ca6105;
+  /* Cor do texto do link */
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.contato,
+.informacoes,
+.horario,
+.faq {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 182, 98, 0.8);
+  max-width: 600px;
+  width: 90%;
+}
+
+h2,
+h3 {
+  color: black;
+  /* Mudança na cor dos títulos */
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff7b00;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff8c00;
+  /* Novo tom de laranja */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ca6105;
+  /* Laranja mais escuro para o hover */
+  color: white;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 182, 98, 0.8);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-family: "Anton", sans-serif;
+  margin-top: 50px;
+  /* Adiciona espaço antes do footer */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ca6105;
+  /* Cor dos links no footer */
+}
+
+h3 {
+  color: black;
+  font-size: 18px;
+  /* Corrigido o tamanho da fonte de x para px */
+  margin: 15px;
+  height: 65;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  /* Corrigido o tamanho da fonte de x para px */
+  margin: 15px;
+}
+
+/* Estilo para o ícone do menu */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Configuração padrão do menu */
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+/* Configurações para telas menores */
+@media (max-width: 768px) {
+
+  /* Mostra o ícone do menu apenas no mobile */
+  .menu-icon {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Estilização para o menu no modo mobile */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: static;
+    /* Agora fica abaixo do logo */
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Mostra o menu ao ativar a classe 'show' */
+  nav ul.show {
+    display: flex;
+  }
+}

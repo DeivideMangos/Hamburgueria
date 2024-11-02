@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sobre_nós.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+
+  <title>Lanchão</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/homepage/index.html">
+        <img src="/img/burger-logo.png" alt="Lanchão Logo">
+      </a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <!-- Menu de navegação que será exibido abaixo do logo -->
+    <div class="links">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/card%C3%A1pio/card%C3%A1pio.html">Menu</a></li>
+          <li><a href="http://127.0.0.1:5500/promo%C3%A7%C3%B5es/promocoes.html">Promoções</a></li>
+          <li><a href="http://127.0.0.1:5500/localiza%C3%A7%C3%A3o/localizacao.html">Localização</a></li>
+          <li><a href="http://127.0.0.1:5500/sobre_n%C3%B3s/sobre_n%C3%B3s.html">Sobre Nós</a></li>
+          <li><a href="http://127.0.0.1:5500/contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="about-us">
+    <h2>Sobre Nós</h2>
+    <p>Somos mais do que uma lanchonete, somos apaixonados por hambúrgueres! Nossa missão é oferecer uma experiência
+      gastronômica única, com sabores irresistíveis e ingredientes sempre frescos.</p>
+
+    <div class="mission">
+      <h3>Missão</h3>
+      <p>Levar a melhor experiência de hambúrguer artesanal para cada cliente, criando momentos inesquecíveis e sabores
+        que marcam.</p>
+    </div>
+
+    <div class="vision">
+      <h3>Visão</h3>
+      <p>Ser reconhecida como a melhor hamburgueria da cidade, oferecendo inovação constante e atendimento de
+        excelência.</p>
+    </div>
+
+    <div class="values">
+      <h3>Valores</h3>
+      <p>Prezamos pela qualidade, criatividade e paixão em tudo o que fazemos. Nossa equipe é dedicada, nosso ambiente é
+        acolhedor, e nossa comida fala por si só.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Lanchão. Todos os direitos reservados.</p>
+    <p>Nos siga nas redes sociais:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://whatsapp.com">WhatsApp</a>
+    </p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

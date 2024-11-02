@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('/img/backround.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo img {
+  width: 135px;
+  height: 110px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 55;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.menu {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 36px;
+  color: #ff9800;
+  margin-bottom: 50px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.category {
+  margin-bottom: 60px;
+}
+
+.category h2,
+.beverages h2,
+.desserts h2 {
+  font-size: 36px;
+  color: #ff9800;
+  margin-bottom: 50px;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Mantém itens responsivos */
+  gap: 30px;
+  justify-content: center;
+  /* Centraliza a grid */
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  /* Centraliza o texto dentro do item */
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.beverages,
+.desserts {
+  margin-top: 40px;
+  text-align: center;
+  /* Centraliza a seção */
+}
+
+.combos,
+.highlights {
+  margin-top: 60px;
+  text-align: center;
+  /* Centraliza a seção */
+}
+
+.combos h2,
+.highlights h2 {
+  font-size: 36px;
+  color: #ff9800;
+  margin-bottom: 50px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.combos .menu-item,
+.highlights .menu-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  /* Centraliza o texto dentro do item */
+}
+
+.combos .menu-item:hover,
+.highlights .menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.highlights .menu-item img {
+  width: 100%;
+  height: 200px;
+  /* Ajuste a altura conforme necessário */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.highlights .menu-item h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.highlights .menu-item p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ca6105;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+}
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    padding: 10px;
+  }
+
+  .company-name {
+    font-size: 28px;
+    padding: 20px 10px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Adjust Footer Links */
+  footer {
+    padding: 15px 0;
+  }
+
+  /* Estilo para o ícone do menu */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Configuração padrão do menu */
+  nav ul {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+/* Configurações para telas menores */
+@media (max-width: 768px) {
+
+  /* Mostra o ícone do menu apenas no mobile */
+  .menu-icon {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Estilização para o menu no modo mobile */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: static;
+    /* Agora fica abaixo do logo */
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Mostra o menu ao ativar a classe 'show' */
+  nav ul.show {
+    display: flex;
+  }
+}
+
+.cta {
+  text-align: center;
+  margin: 40px 0;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  /* Ensures no underline */
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
